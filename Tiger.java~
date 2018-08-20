@@ -1,0 +1,45 @@
+import java.util.Random;
+import java.awt.*
+  
+public class Tiger extends Critter
+{
+  private int MaxFood;
+  
+  public Tiger(int hunger)
+  {
+    this.MaxFood = hunger;
+  }
+  
+  public Color getColor()
+  {
+    return Color.YELLOW;
+  }
+  
+  public boolean eat()
+  {
+    if(this.MaxFood > 0)
+    {
+      --this.MaxFood;
+      return true
+    }
+    else
+    {
+      return false;
+    }
+  }
+  
+  
+  
+  public String toString()
+  {
+    return ""+MaxFood;
+  }
+
+
+
+
+
+
+
+
+}
